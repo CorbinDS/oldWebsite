@@ -1,0 +1,17 @@
+body {
+  background-color: #21212D;
+}
+
+.name {
+  color: red;
+}
+
+.main {
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+.description {
+  color: #808080;
+  font-size: 18px;
+}
