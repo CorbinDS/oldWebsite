@@ -65,3 +65,15 @@ window.onload = function () {
   }
 
 }
+
+function filterProjects(category) {
+  let projects = document.querySelectorAll('.container .row .col-md-4.mb-5');
+  projects.forEach(project => {
+    let categories = project.getAttribute('project-categories').split(' ');
+    if (category === 'all' || categories.includes(category)) {
+      project.style.display = '';
+    } else {
+      project.style.display = 'none';
+    }
+  });
+}
