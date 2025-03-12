@@ -67,7 +67,8 @@ window.onload = function () {
 }
 
 function filterProjects(category) {
-  let projects = document.querySelectorAll('.container .row .col-md-4.mb-5');
+  let projects = document.querySelectorAll('.card');
+  console.log(projects);
   projects.forEach(project => {
     let categories = project.getAttribute('project-categories').split(' ');
     if (category === 'all' || categories.includes(category)) {
